@@ -1,0 +1,63 @@
+.heroContainer {
+  position: relative;
+  cursor: pointer;
+  .image {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .textInfo {
+    width: 70vw;
+    max-width: 28rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    border: 1px solid rgb(248, 248, 248);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.8rem;
+    }
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.137);
+    }
+  }
+} 
+
+.specials{
+  padding: 1rem 0;
+
+  h2{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .heroContainer {
+    .textInfo {
+      padding: 2rem;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .specials{
+    padding: 2rem;
+
+    .specialsContainer{
+      display: flex;
+    }
+  }
+
+  
+}
+

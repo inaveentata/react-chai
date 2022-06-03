@@ -1,0 +1,24 @@
+.Error{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    button{
+        padding: 0.5rem 1rem;
+        border-radius: 0.4rem;
+        background-color: transparent;
+        transition: all 0.3s linear;
+        .Link{
+
+            color: black;
+            font-weight: 600;
+            letter-spacing: 2px;
+            
+        }
+        &:hover{
+            background-color:  rgb(243, 187, 115);
+        }
+    } 
+}

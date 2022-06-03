@@ -1,0 +1,28 @@
+.HomeItem {
+  border: 1px solid saddlebrown;
+  width: 100vw;
+  max-width: 22rem;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  div img {
+    height: 15rem;
+    width: 100%;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    padding: 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width:600px){
+  .HomeItem{
+    margin-right: 10px;
+  }
+}

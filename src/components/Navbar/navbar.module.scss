@@ -1,0 +1,107 @@
+$transition: all 0.3s linear;
+
+.header {
+  background-color: rgb(243, 187, 115);
+}
+
+
+.nav {
+  margin: 0 auto;
+}
+
+.navHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  .logoLink {
+    font-size: 2rem; 
+    font-weight: 700;
+    font-style: oblique;
+    text-transform: capitalize;
+    color: brown;
+  }
+
+  .menu {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+    &:hover{
+        color: blue;
+        transform: scale(0.8);
+    }
+  }
+}
+
+
+.navContainer {
+  height: 0;
+    overflow: hidden;
+    transition: all 0.8s linear;
+
+  .navItem {
+    transition: all 0.3s linear;
+    .navLink {
+      padding: 1rem;
+      display: block;
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      cursor: pointer;
+      color: brown;
+    }
+    &:hover {
+      background-color: #fff;
+      padding-left: 1rem;
+    }
+  }
+}
+
+.showContainer {
+  height: auto;
+  overflow: visible;
+}
+
+@media screen and (min-width:600px){
+    .header{
+        padding: 1rem;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navHeader{
+        padding: 0;
+        .menu{
+            display: none;
+        }
+    }
+
+    .navContainer{
+        height: auto !important;
+        .navLinks{
+            display: flex;
+            align-items: center;
+        }
+        .navItem {
+            .navLink {
+                margin: 0 0.7rem;
+                padding: 0;
+              display: inline-block;
+              font-size: 1.2rem;
+              text-transform: uppercase;
+              letter-spacing: 1.3px;
+              cursor: pointer;
+            }
+            &:hover {
+              background-color: transparent;
+              padding-left: 0;
+            }
+          }
+    }
+}

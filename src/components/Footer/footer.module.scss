@@ -1,0 +1,55 @@
+.footer {
+  background-color: rgb(243, 187, 115);
+  color: rgb(20, 9, 31);
+  padding: 1rem;
+
+  address {
+    p {
+      margin: 0.5rem 0;
+    }
+  }
+
+  .socialLinks {
+    margin-top: 1rem;
+    ul li {
+      display: flex;
+      margin: 0.5rem 0;
+      align-items: center;
+      cursor: pointer;
+
+      span {
+        margin-right: 5px;
+      }
+
+      &:hover .twitter{
+        color: rgb(0, 140, 196);
+      }
+      &:hover .facebook{
+        color: rgb(4, 45, 156);
+      }
+      &:hover .linkdin{
+        color: rgb(3, 12, 97);
+      }
+      &:hover .youtube{
+        color: rgb(250, 0, 0);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    address{
+        padding-left: 3rem;
+    }
+
+    .socialLinks {
+      margin: 0;
+      padding-right: 3rem;
+    }
+  }
+}

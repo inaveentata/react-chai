@@ -1,0 +1,27 @@
+.AboutItem {
+  min-height: 60vh;
+  h1 {
+    font-family: "Lobster", cursive;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight:thin;
+  }
+  p {
+    padding: 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .AboutItem {
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .AboutItem {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
